@@ -14,8 +14,26 @@
           <img id="wood2" src="images/wood2.jpg" />
           <img id="grass" src="images/grass.jpg" />
       </a-assets>
+      
+      <a-camera>
+        <a-entity id="mouseCursor"
+          cursor="fuse: true; fuseTimeout: 1500">
+        </a-entity>
+        <a-plane id="crossHair1" 
+          position="0 0 -1"
+          height= "0.025"
+          width= "0.005"
+          color= "#FFEF08"
+        </a-plane>
+        <a-plane id="crossHair2" 
+          position="0 0 -1"
+          height= "0.01"
+          width= "0.05"
+          color= "#FFEF08"
+        </a-plane>
+      </a-camera>
 
-      <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
+      // <a-entity id="mouseCursor" cursor="rayOrigin: mouse"></a-entity>
 
       <a-box id="myBox" 
         position="-1 1 -3" 
